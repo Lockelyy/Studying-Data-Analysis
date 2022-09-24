@@ -1,5 +1,13 @@
 import pandas as pd
 import quandl
+import matplotlib
+
+avocado_data = 'Datasets/avocado.csv'
+df = pd.read_csv(avocado_data)
+print(df.head(5))
+
+
+'''
 
 df = quandl.get('WIKI/GOOGL')
 
@@ -9,3 +17,6 @@ df['Percent change in stock'] = round((df['Adj. Close'] - df['Adj. Open']) / df[
 
 df = df[['Adj. Close', 'High Low Percent', 'Percent change in stock', 'Adj. Volume']]
 print(df.head(5))
+
+'''
+
