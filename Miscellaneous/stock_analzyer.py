@@ -1,4 +1,6 @@
 ## Code from stock price analyzer (utilizes quandl dataset: WIKI/GOOGL):
+import quandl
+import pandas as pd
 
 df = quandl.get('WIKI/GOOGL')
 
