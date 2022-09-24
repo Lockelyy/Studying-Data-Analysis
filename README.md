@@ -5,6 +5,3 @@ Blah Blah Blah
 ## Testing again again??????????????/
 
 # Still testing but its on another branch :0
-Lorem ipsum
-
-### Lorem Lorem Lorem
