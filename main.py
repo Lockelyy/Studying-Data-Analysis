@@ -1,6 +1,6 @@
 import pandas as pd
 
-melbourne_file_path = '/Users/dr.dre/Downloads/melb_data.csv'
-melbourne_data = pd.read_csv(melbourne_file_path) 
-
-melbourne_data.shape()
+pokemon_data = 'pokemon_data.csv'
+poke = pd.read_csv(pokemon_data)
+ 
+print(poke.Name)
