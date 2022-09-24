@@ -3,6 +3,10 @@ import pandas as pd
 pokemon_data = 'pokemon_data.csv'
 poke = pd.read_csv(pokemon_data)
  
+y = poke.Attack
+poke_features = ['HP', 'Defense', 'Speed']
+x = poke[poke_features]
+print(x.describe())
 # PRINT SPECIFIC COLUMNS:
     #   print(poke[['Name', 'Type 1', 'HP']])
 
