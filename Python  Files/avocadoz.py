@@ -6,13 +6,15 @@ import time
 avocado_data = 'Datasets/avocado.csv'
 df = pd.read_csv(avocado_data)
 
-price_by_year = (df[['Date', 'AveragePrice']])
+sorted_price = (df['AveragePrice']).sort_values()
+price_by_year = (df[['year', 'AveragePrice']])
 print(price_by_year.head(5))
 
 print("\n")
 
 df_albany = df[ df['region'] == 'Albany' ]
-print(df_albany.head(5))
+df_albany.set_index('Date', inplace = True)
+print(df_albany.head())
 
 
 '''
