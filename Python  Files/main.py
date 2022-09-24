@@ -1,14 +1,13 @@
 import pandas as pd
 
-pokemon_data = 'Dataset/pokemon_data.csv'
+pokemon_data = 'Datasets/pokemon_data.csv'
 poke = pd.read_csv(pokemon_data)
  
 y = poke.Attack
 poke_features = ['HP', 'Defense', 'Speed']
 x = poke[poke_features]
-print(x.describe())
 # PRINT SPECIFIC COLUMNS:
-    #   print(poke[['Name', 'Type 1', 'HP']])
+print(poke[['Name', 'Type 1', 'HP']])
 
 # PRINT A SPECIFIC ITEM BASED ON ITS INDEX:
     #   print(poke.iloc[2,1])

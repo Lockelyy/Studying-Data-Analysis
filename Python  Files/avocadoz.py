@@ -1,10 +1,18 @@
 import pandas as pd
 import quandl
 import matplotlib
+import time
 
 avocado_data = 'Datasets/avocado.csv'
 df = pd.read_csv(avocado_data)
-print(df.head(5))
+
+price_by_year = (df[['Date', 'AveragePrice']])
+print(price_by_year.head(5))
+
+print("\n")
+
+df_albany = df[ df['region'] == 'Albany' ]
+print(df_albany.head(5))
 
 
 '''
