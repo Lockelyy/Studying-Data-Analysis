@@ -8,13 +8,16 @@ df = pd.read_csv(avocado_data)
 
 sorted_price = (df['AveragePrice']).sort_values()
 price_by_year = (df[['year', 'AveragePrice']])
-print(price_by_year.head(5))
+print(price_by_year.head(5), "\n")
 
-print("\n")
 
 df_albany = df[ df['region'] == 'Albany' ]
 df_albany.set_index('Date', inplace = True)
-print(df_albany.head())
+print(df_albany.head(), "\n")
+
+# Prints out every unique value from the specified column
+print(df['region'].unique())
+
 
 
 '''
